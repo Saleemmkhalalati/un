@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="Style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="nav">
+        <img class="logo" src="./images/lo.jpg" alt="logo" />
+        <li class="links"><a href="home.html">Home</a></li>
+        <li class="links"><a href="aboutUs.html">About Us </a></li>
+        <li class="links"><a href="properties.html">Properties</a></li>
+      </ul>
+    </div>
+    <div class="properties">
+      <h3 class="home-title">أختر عقارك المناسب معنا بأفضل الأسعار</h3>
+      <table class="real-estate-table">
+        <thead>
+          <tr>
+            <th>المدينة</th>
+            <th>تفاصيل الشقة</th>
+            <th>الإيجار الشهري</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>دمشق</td>
+            <td>شقة غرفتين وصالة مساحة 80م</td>
+            <td>2000000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                checked
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>المزة</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق الثالث</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/1.jpg" alt="" />
+                <img src="images/2.jpg" alt="" />
+                <img src="images/3.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>حماة</td>
+            <td>شقة غرفتين وصالة مساحة 80م</td>
+            <td>1000000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>البياض</p>
+                </div>
+
+                <p>كراج غير متوفر</p>
+                <p>الطابق الثالث</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>غير مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/4.jpg" alt="" />
+                <img src="images/5.jpg" alt="" />
+                <img src="images/6.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>حلب</td>
+            <td>شقة غرفة وصالة مساحة 80م</td>
+            <td>2000000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>الموكامبو</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق العاشر</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/7.jpg" alt="" />
+                <img src="images/8.jpeg" alt="" />
+                <img src="images/9.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>الرقة</td>
+            <td>شقة ثلاث غرف وصالة مساحة 180م</td>
+            <td>2000000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>الطبقة</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق الاول</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>حديقة مساحة 30م</p>
+                <p>غير مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/9.jpg" alt="" />
+                <img src="images/10.jpg" alt="" />
+                <img src="images/11.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>إدلب</td>
+            <td>شقة غرفتين وصالة مساحة 80م</td>
+            <td>500000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>المدينة</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق الثالث</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/1.jpg" alt="" />
+                <img src="images/2.jpg" alt="" />
+                <img src="images/3.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>دمشق</td>
+            <td>شقة غرفتين وصالة مساحة 90م</td>
+            <td>1500000.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>مشروع دمر</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق السابع</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/11.jpg" alt="" />
+                <img src="images/5.jpg" alt="" />
+                <img src="images/7.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>الحسكة</td>
+            <td>شقة غرفتين وصالة مساحة 120م</td>
+            <td>100000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>المدينة</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق الثاني</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/9.jpg" alt="" />
+                <img src="images/8.jpeg" alt="" />
+                <img src="images/2.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>طرطوس</td>
+            <td>شقة غرفة وصالة مساحة 70م</td>
+            <td>1700000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>الكورنيش</p>
+                </div>
+
+                <p>كراج غير متوفر</p>
+                <p>الطابق الثاني عشر</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/6.jpg" alt="" />
+                <img src="images/11.jpg" alt="" />
+                <img src="images/5.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>دمشق</td>
+            <td>شقة غرفتين وصالة مساحة 100م</td>
+            <td>3000000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>الجاحظ</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق الرابع</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/7.jpg" alt="" />
+                <img src="images/10.jpg" alt="" />
+                <img src="images/4.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>حماة</td>
+            <td>شقة غرفتين وصالة مساحة 85م</td>
+            <td>1000000.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>حي البعث</p>
+                </div>
+
+                <p>كراج غير متوفر</p>
+                <p>الطابق الثالث</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 8م</p>
+                <p>غير مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/3.jpg" alt="" />
+                <img src="images/2.jpg" alt="" />
+                <img src="images/1.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>دمشق</td>
+            <td>شقة غرفتين وصالة مساحة 80م</td>
+            <td>2000000ل.س</td>
+            <td><input type="checkbox" class="show-details" /></td>
+            <td>
+              <input
+                type="radio"
+                name="select-apartment"
+                class="select-apartment"
+              />
+            </td>
+          </tr>
+          <tr class="details-row" style="display: none;">
+            <td colspan="5">
+              <div class="details-content">
+                <div class="details-div">
+                  <span>المنطقة:</span>
+                  <p>المزة</p>
+                </div>
+
+                <p>كراج متوفر</p>
+                <p>الطابق الثالث</p>
+                <div class="details-div">
+                  <span>الملكية:</span>
+                  <p>طابو</p>
+                </div>
+
+                <p>بلكون مساحة 6م</p>
+                <p>مفروشة</p>
+              </div>
+              <div class="images-home">
+                <img src="images/11.jpg" alt="" />
+                <img src="images/7.jpg" alt="" />
+                <img src="images/9.jpg" alt="" />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="submit">
+        <button class="submit-button" id="show-form-button">متابعة</button>
+      </div>
+
+      <div class="form-area">
+        <div id="property-form" style="display: none;">
+          <h3>أدخل معلوماتك هنا</h3>
+          <form class="propertyForm" id="propertyForm">
+            <div class="myInput">
+              <label for="name">الاسم الكامل:</label>
+              <input type="text" id="name" name="name" />
+              <span class="error-message" id="name-error"
+                >الرجاء إدخال الاسم باللغه العربية فقط.</span
+              >
+            </div>
+            <div class="myInput">
+              <label for="id">الرقم الوطني:</label>
+              <input type="text" id="id" name="id" />
+              <span class="error-message" id="id-error"
+                >الرقم الوطني يجب أن يتكون من 11 خانة ويبدأ بأحد رموز
+                المحافظات.</span
+              >
+            </div>
+            <div class="myInput">
+              <label for="dob">تاريخ الولادة:</label>
+              <input type="date" id="dob" name="dob" />
+              <span class="error-message" id="dob-error"
+                >الرجاء إدخال تاريخ صحيح.</span
+              >
+            </div>
+            <div class="myInput">
+              <label for="phone">رقم الموبايل:</label>
+              <input type="text" id="phone" name="phone" />
+              <span class="error-message" id="phone-error"
+                >رقم الموبايل يجب أن يبدأ بـ 099, 098, 096, 095, 094, 093.</span
+              >
+            </div>
+            <div class="myInput">
+              <label for="email">الإيميل:</label>
+              <input type="email" id="email" name="email" />
+              <span class="error-message" id="email-error"
+                >الرجاء إدخال إيميل صحيح.</span
+              >
+            </div>
+            <!-- حقل التحقق -->
+            <div class="myInput">
+              <label for="captcha">الرجاء كتابة الكلمة التالية للتحقق:</label>
+              <p id="captcha-text">تحقق</p>
+              <button
+                class="refresh-captcha"
+                type="button"
+                id="refresh-captcha"
+              >
+                تحديث
+              </button>
+              <input type="text" id="captcha" name="captcha" />
+              <span class="error-message" id="captcha-error"
+                >الرجاء كتابة الكلمة بشكل صحيح.</span
+              >
+            </div>
+
+            <input type="submit" value="متابعة" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="myFunction.js"></script>
+  </body>
+</html>

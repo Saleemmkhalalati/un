@@ -1,0 +1,457 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Setting font type */
+body {
+  margin: 0px 40px;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: var(--text-color);
+  direction: rtl;
+  list-style: none;
+}
+/* Define color variables */
+:root {
+  --primary-color: #03aed2;
+  --secondary-color: #68d2e8;
+  --error-color: #ef4040; /* Red */
+  --yellow-color: #fdde55; /* Yellow */
+  --text-color: #333;
+  --my-font: 17px;
+}
+
+/* navbar */
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 1px 1px 0.5px 1px #eee;
+}
+.navbar .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.navbar .nav .links {
+  padding: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navbar .nav .links:hover {
+  background-color: white;
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+.navbar .nav .links a {
+  font-weight: bold;
+  color: white;
+}
+.navbar .nav .links:hover a {
+  color: var(--primary-color);
+}
+.navbar .nav .logo {
+  width: 50px;
+  height: 50px;
+}
+/* home */
+.home {
+  direction: rtl;
+  min-height: 100vh;
+  padding-top: 20px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.home-title::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 10px;
+  transform: translateX(-50%);
+  left: 50%;
+  box-shadow: 1px 1px 0.5px 1px #eee;
+  transition: background-color 0.3s ease;
+}
+
+.home-title:hover::before {
+  animation: up-and-down 1.3s infinite;
+}
+.home-h3 {
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.names {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.names p {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: var(--my-font);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+.names p:hover {
+  background-color: var(--secondary-color);
+  transition: all 0.3s;
+  color: white;
+}
+
+/* properties */
+
+.properties {
+  padding-top: 20px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.real-estate-table {
+  font-size: var(--my-font);
+  direction: rtl;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+}
+
+.real-estate-table th,
+.real-estate-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.real-estate-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.details-row {
+  background-color: #f9f9f9;
+}
+
+.details-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: var(--my-font);
+  gap: 5px;
+}
+.details-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.show-details,
+.select-apartment {
+  cursor: pointer;
+}
+.images-home {
+  display: flex;
+
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.images-home img {
+  max-width: 200px;
+  height: auto;
+}
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.submit-button {
+  padding: 7px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: var(--my-font);
+}
+.submit-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* form */
+.form-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#property-form {
+  direction: rtl;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+#propertyForm {
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.myInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#property-form h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: var(--my-font);
+}
+
+#propertyForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  font-size: var(--my-font);
+}
+
+#propertyForm input[type="text"],
+#propertyForm input[type="date"],
+#propertyForm input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#propertyForm input[type="text"],
+#propertyForm input[type="date"],
+#propertyForm input[type="email"]:focus {
+  outline: none;
+}
+
+#propertyForm input[type="submit"] {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: var(--my-font);
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#propertyForm input[type="submit"]:hover {
+  background: var(--secondary-color);
+}
+
+.error-message {
+  font-size: 0.875rem;
+  color: var(--error-color);
+  display: none;
+}
+.refresh-captcha {
+  padding: 10px;
+  width: 10%;
+  border: none;
+  background-color: var(--yellow-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@keyframes up-and-down {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.aboutus-paje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+  min-height: 100vh;
+}
+/* ازرار رجوع ومتابعة */
+
+.about-us {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color);
+}
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 10px;
+  transform: translateX(-50%);
+  left: 50%;
+  box-shadow: 1px 1px 0.5px 1px #eee;
+  transition: background-color 0.3s ease;
+}
+.about-us:hover::before {
+  animation: up-and-down 1.3s infinite;
+}
+
+.about-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.about-us {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.min-div {
+  text-align: right;
+}
+
+.how-we-are {
+  font-size: var(--my-font);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.how-we-are ul {
+  margin-top: 10px;
+  padding-right: 20px;
+  list-style: none;
+  position: relative;
+}
+
+.how-we-are ul li {
+  margin-bottom: 10px;
+  padding-right: 2em;
+  position: relative;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-button:hover {
+  background-color: var(--secondary-color);
+}
+/*معلومات التواصل*/
+.social-buttons {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.social-buttons h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.social-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+}
+
+.social-button.facebook {
+  background: #3b5998;
+}
+.social-button.twitter {
+  background: #55acee;
+}
+.social-button.linkedin {
+  background: #0077b5;
+}
+.social-button.instagram {
+  background: #e4405f;
+}
+.social-button.whatsapp {
+  background: #25d366;
+}
+.social-button.pinterest {
+  background: #bd081c;
+}
+.social-button.google {
+  background: #dd4b39;
+}
+
+.social-button .icon {
+  margin-right: 8px;
+}
